@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: url(./images/memory.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: test 0.3s linear;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.buttons {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  width: 15rem;
+  height: 5rem;
+  margin-top: 2rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s linear;
+  font-weight: bold;
+}
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px lightblue;
+}
+a button {
+  text-decoration: none;
+  color: #d87093;
+  font-size: 20px;
+}
+@keyframes test {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
